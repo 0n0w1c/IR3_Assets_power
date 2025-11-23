@@ -14,7 +14,12 @@ See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/I
 
 *Startup setting to enable solar array*
 *Startup setting to enable gas generator*
-
+*Startup setting to enable fuel values*
+---
+* 0.8 MJ heavy-oil
+* 1.2 MJ light-oil
+* 0.6 MJ petroleum-gas
+---
 If the IR3 Assets are not installed, this mod will do nothing.
 
 This mod does **not** include IR3 or the assets.  

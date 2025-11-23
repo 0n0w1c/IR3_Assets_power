@@ -44,3 +44,16 @@ if settings.startup["IR3-enable-gas-generator"].value == true then
         recycling.generate_recycling_recipe(recipe)
     end
 end
+
+if settings.startup["IR3-enable-fuel-values"].value then
+    local function set_fuel_value(name, value)
+        local fluid = data.raw["fluid"][name]
+        if fluid and not fluid.fuel_value then
+            fluid.fuel_value = value
+        end
+    end
+
+    set_fuel_value("heavy-oil", "0.8MJ")
+    set_fuel_value("light-oil", "1.2MJ")
+    set_fuel_value("petroleum-gas", "0.6MJ")
+end

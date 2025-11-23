@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 23.11.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Startup setting to assign a fuel value to the petroleum fluids (if not already assigned)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 23.11.2025
   Bugfixes:
