@@ -1,9 +1,15 @@
+local category = "crafting"
+
+if mods["space-age"] then
+    category = "electronics"
+end
+
 data:extend({
     {
         type = "recipe",
         name = "solar-array",
         always_show_products = true,
-        category = "crafting",
+        category = category,
         enabled = false,
         energy_required = 4,
         ingredients = {
