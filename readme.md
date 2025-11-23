@@ -12,8 +12,8 @@ For licensing concerns: [FAQ](https://mods.factorio.com/mod/IR3_Assets_assemblin
 
 See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/IR3_Assets_some_assembly_required)
 
-*Startup setting to enable solar array*
-*Startup setting to enable gas generator*
+*Startup setting to enable solar array*  
+*Startup setting to enable gas generator*  
 *Startup setting to enable fuel values*
 ---
 * 0.8 MJ heavy-oil
