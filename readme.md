@@ -19,6 +19,7 @@ See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/I
 * 0.8 MJ heavy-oil
 * 1.2 MJ light-oil
 * 0.6 MJ petroleum-gas
+* 0.4 MJ natural-gas (from IR3 Assets: resources)
 ---
 If the IR3 Assets are not installed, this mod will do nothing.
 
