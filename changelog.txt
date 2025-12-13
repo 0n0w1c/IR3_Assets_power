@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 13.12.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Gas generator and solar array prototype definitions moved to data.lua
+    - Modified the stack size and weight of the gas generator
+    - Modified the weight of the solar array
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 23.11.2025
   Bugfixes:

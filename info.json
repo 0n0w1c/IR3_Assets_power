@@ -1,6 +1,6 @@
 {
     "name": "IR3_Assets_power",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "IR3 Assets: power",
     "author": "0n0w1c",
     "description": "Reskins the solar panel and optionally adds a solar array and gas generator using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",

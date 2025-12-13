@@ -11,7 +11,8 @@ data:extend({
         },
         order = "c[gas-generator]-g[gas-generator]",
         place_result = "gas-generator",
-        stack_size = 50,
+        stack_size = 10,
         subgroup = "energy",
+        weight = 100000
     }
 })

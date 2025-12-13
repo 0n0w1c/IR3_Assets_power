@@ -13,5 +13,6 @@ data:extend({
         place_result = "solar-array",
         stack_size = 50,
         subgroup = "energy",
+        weight = 20000
     }
 })
