@@ -1,23 +1,30 @@
 data:extend({
     {
         type = "bool-setting",
-        name = "IR3-enable-solar-array",
+        name = "IR3-enable-electric-poles",
         setting_type = "startup",
         default_value = false,
         order = "a",
     },
     {
         type = "bool-setting",
-        name = "IR3-enable-gas-generator",
+        name = "IR3-enable-solar-array",
         setting_type = "startup",
         default_value = false,
         order = "b",
     },
     {
         type = "bool-setting",
-        name = "IR3-enable-fuel-values",
+        name = "IR3-enable-gas-generator",
         setting_type = "startup",
         default_value = false,
         order = "c",
+    },
+    {
+        type = "bool-setting",
+        name = "IR3-enable-fuel-values",
+        setting_type = "startup",
+        default_value = false,
+        order = "d",
     }
 })

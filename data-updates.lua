@@ -29,3 +29,11 @@ if settings.startup["IR3-enable-fuel-values"].value then
     set_fuel_value("light-oil", "1.2MJ")
     set_fuel_value("petroleum-gas", "0.6MJ")
 end
+
+if settings.startup["IR3-enable-electric-poles"].value then
+    local technology = data.raw["technology"]["electric-energy-distribution-1"]
+
+    table.insert(technology.effects, { type = "unlock-recipe", recipe = "big-wooden-pole", })
+    table.insert(technology.effects, { type = "unlock-recipe", recipe = "small-iron-pole", })
+    table.insert(technology.effects, { type = "unlock-recipe", recipe = "medium-steel-pole", })
+end

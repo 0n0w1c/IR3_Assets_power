@@ -1,9 +1,9 @@
 {
     "name": "IR3_Assets_power",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "title": "IR3 Assets: power",
     "author": "0n0w1c",
-    "description": "Reskins the solar panel and optionally adds a solar array and gas generator using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
+    "description": "Reskins the solar panel and optionally adds a solar array, gas generator and electric poles using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",

@@ -33,3 +33,21 @@ if settings.startup["IR3-enable-gas-generator"].value == true then
         recycling.generate_recycling_recipe(recipe)
     end
 end
+
+if settings.startup["IR3-enable-electric-poles"].value == true then
+    local poles = { "big-wooden-pole", "small-iron-pole", "medium-steel-pole" }
+    for _, pole in ipairs(poles) do
+        require("prototypes/explosion/" .. pole)
+        require("prototypes/entity/" .. pole)
+        require("prototypes/item/" .. pole)
+        require("prototypes/recipe/" .. pole)
+
+        if mods["quality"] then
+            local recycling = require("__quality__/prototypes/recycling")
+            local recipe = data.raw["recipe"][pole]
+            if recipe then
+                recycling.generate_recycling_recipe(recipe)
+            end
+        end
+    end
+end

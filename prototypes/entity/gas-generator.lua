@@ -142,26 +142,7 @@ data:extend({
             }
         },
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/petro-generator.png",
-        icon_mipmaps = 4,
         icon_size = 64,
-        --[[
-      -- this is interesting, do not delete
-      localised_description = {
-        "",
-        {
-          "entity-description.petro-generator"
-        },
-        "\n",
-        {
-          "entity-description.accepted-types"
-        },
-        " ",
-        "[img=fluid/petroleum-gas] ",
-        "[img=fluid/ethanol] ",
-        "[img=fluid/high-octane-fluid] ",
-        "[img=fluid/natural-gas] "
-      },
-      ]]
         max_health = 400,
         max_power_output = "800kW",
         maximum_temperature = 100,

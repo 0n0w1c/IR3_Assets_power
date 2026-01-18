@@ -1,6 +1,6 @@
 # IR3 Assets: power
 
-Reskins the solar panel and optionally adds a solar array and gas generator using IR3 graphical assets, if installed.  
+Reskins the solar panel and optionally adds a solar array, gas generator and electric poles using IR3 graphical assets, if installed.  
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs.*
 
@@ -12,9 +12,10 @@ For licensing concerns: [FAQ](https://mods.factorio.com/mod/IR3_Assets_assemblin
 
 See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/IR3_Assets_some_assembly_required)
 
+*Startup setting to enable electric poles*  
 *Startup setting to enable solar array*  
 *Startup setting to enable gas generator*  
-*Startup setting to enable fuel values*
+*Startup setting to enable fuel values*  
 ---
 * 0.8 MJ heavy-oil
 * 1.2 MJ light-oil
