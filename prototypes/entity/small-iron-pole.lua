@@ -110,7 +110,6 @@ data:extend({
             "player-creation",
         },
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/small-iron-pole.png",
-        icon_mipmaps = 4,
         icon_size = 64,
         max_health = 100,
         maximum_wire_distance = 7.5,

@@ -3,8 +3,7 @@ data:extend({
         type = "recipe",
         name = "small-iron-pole",
 
-        always_show_products = true,
-        category = "crafting",
+        categories = { "crafting" },
         enabled = false,
         energy_required = 1,
         ingredients = {
@@ -13,7 +12,6 @@ data:extend({
         },
         order = "a[energy]-a[zb]",
         results = { { type = "item", name = "small-iron-pole", amount = 1 } },
-        show_amount_in_title = false,
         subgroup = "energy-pipe-distribution",
     }
 })

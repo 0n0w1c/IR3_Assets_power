@@ -2,8 +2,7 @@ data:extend({
     {
         type = "recipe",
         name = "gas-generator",
-        always_show_products = true,
-        category = "crafting",
+        categories = { "crafting" },
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -13,13 +12,12 @@ data:extend({
             { type = "item", name = "copper-cable", amount = 40 }
         },
         results = { { type = "item", name = "gas-generator", amount = 1 } },
-        show_amount_in_title = false,
     }
 })
 
 local recipe = data.raw["recipe"]["gas-generator"]
 
-if mods["quality"] then
-    local recycling = require("__quality__/prototypes/recycling")
+if mods["recycler"] then
+    local recycling = require("__recycler__.recycling")
     recycling.generate_recycling_recipe(recipe)
 end

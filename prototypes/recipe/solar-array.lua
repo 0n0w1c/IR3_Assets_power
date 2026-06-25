@@ -1,15 +1,14 @@
-local category = "crafting"
+local categories = { "crafting" }
 
-if mods["space-age"] then
-    category = "electronics"
+if mods["space-age"] and data.raw["recipe"]["solar-panel"] then
+    categories = table.deepcopy(data.raw["recipe"]["solar-panel"].categories or { "crafting" })
 end
 
 data:extend({
     {
         type = "recipe",
         name = "solar-array",
-        always_show_products = true,
-        category = category,
+        categories = categories,
         enabled = false,
         energy_required = 4,
         ingredients = {
@@ -18,6 +17,5 @@ data:extend({
             { type = "item", name = "copper-cable", amount = 8 }
         },
         results = { { type = "item", name = "solar-array", amount = 1 } },
-        show_amount_in_title = false,
     }
 })

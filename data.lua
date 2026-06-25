@@ -13,9 +13,9 @@ if settings.startup["IR3-enable-solar-array"].value == true then
     require("prototypes/recipe/solar-array")
     require("prototypes/technology/solar-array")
 
-    if mods["quality"] then
+    if mods["recycler"] then
         local recipe = data.raw["recipe"]["solar-array"]
-        local recycling = require("__quality__/prototypes/recycling")
+        local recycling = require("__recycler__.recycling")
         recycling.generate_recycling_recipe(recipe)
     end
 end
@@ -27,9 +27,9 @@ if settings.startup["IR3-enable-gas-generator"].value == true then
     require("prototypes/recipe/gas-generator")
     require("prototypes/technology/gas-generator")
 
-    if mods["quality"] then
+    if mods["recycler"] then
         local recipe = data.raw["recipe"]["gas-generator"]
-        local recycling = require("__quality__/prototypes/recycling")
+        local recycling = require("__recycler__.recycling")
         recycling.generate_recycling_recipe(recipe)
     end
 end
@@ -42,8 +42,8 @@ if settings.startup["IR3-enable-electric-poles"].value == true then
         require("prototypes/item/" .. pole)
         require("prototypes/recipe/" .. pole)
 
-        if mods["quality"] then
-            local recycling = require("__quality__/prototypes/recycling")
+        if mods["recycler"] then
+            local recycling = require("__recycler__.recycling")
             local recipe = data.raw["recipe"][pole]
             if recipe then
                 recycling.generate_recycling_recipe(recipe)

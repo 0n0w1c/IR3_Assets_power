@@ -124,7 +124,6 @@ data:extend({
             "player-creation"
         },
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/solar-array.png",
-        icon_mipmaps = 4,
         icon_size = 64,
         max_health = 1250,
         minable = {

@@ -11,9 +11,9 @@ require("prototypes/entity/solar-panel")
 require("prototypes/item/solar-panel")
 require("prototypes/technology/solar-energy")
 
-if mods["quality"] then
+if mods["recycler"] then
     local recipe = data.raw["recipe"]["solar-panel"]
-    local recycling = require("__quality__/prototypes/recycling")
+    local recycling = require("__recycler__.recycling")
     recycling.generate_recycling_recipe(recipe)
 end
 

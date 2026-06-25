@@ -1,5 +1,116 @@
 local pipe_covers = require("prototypes/entity/pipe-covers")
 
+local horizontal_animation = {
+            layers = {
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = true,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-shadow-ew.png",
+                    height = 192,
+                    priority = "high",
+                    repeat_count = 30,
+                    scale = 0.5,
+                    shift = { 0.5, 0 },
+                    width = 256,
+                    x = 0,
+                    y = 0
+                },
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = true,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-working-shadow-ew.png",
+                    frame_count = 30,
+                    height = 192,
+                    line_length = 6,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = { 1.5, 0 },
+                    width = 128,
+                    x = 0,
+                    y = 0
+                },
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = false,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-ew.png",
+                    flags = { "trilinear-filtering" },
+                    frame_count = 30,
+                    height = 192,
+                    line_length = 6,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = { 0, 0 },
+                    width = 192,
+                    x = 0,
+                    y = 0
+                }
+            }
+        }
+
+local vertical_animation = {
+            layers = {
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = true,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-shadow-ns.png",
+                    height = 256,
+                    priority = "high",
+                    repeat_count = 30,
+                    scale = 0.5,
+                    shift = { 0, 0 },
+                    width = 192,
+                    x = 0,
+                    y = 0
+                },
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = true,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-working-shadow-ns.png",
+                    frame_count = 30,
+                    height = 192,
+                    line_length = 6,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = { 1.5, 0 },
+                    width = 128,
+                    x = 0,
+                    y = 0
+                },
+                {
+                    animation_speed = 1,
+                    draw_as_glow = false,
+                    draw_as_light = false,
+                    draw_as_shadow = false,
+                    filename =
+                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-ns.png",
+                    frame_count = 30,
+                    height = 256,
+                    line_length = 6,
+                    priority = "high",
+                    scale = 0.5,
+                    shift = { 0, 0 },
+                    width = 192,
+                    x = 0,
+                    y = 0
+                }
+            }
+        }
+
 data:extend({
     {
         type = "generator",
@@ -86,60 +197,11 @@ data:extend({
             production_type = "input-output",
         },
         fluid_usage_per_tick = 0.03333333333333333,
-        horizontal_animation = {
-            layers = {
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = true,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-shadow-ew.png",
-                    height = 192,
-                    priority = "high",
-                    repeat_count = 30,
-                    scale = 0.5,
-                    shift = { 0.5, 0 },
-                    width = 256,
-                    x = 0,
-                    y = 0
-                },
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = true,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-working-shadow-ew.png",
-                    frame_count = 30,
-                    height = 192,
-                    line_length = 6,
-                    priority = "high",
-                    scale = 0.5,
-                    shift = { 1.5, 0 },
-                    width = 128,
-                    x = 0,
-                    y = 0
-                },
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = false,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-ew.png",
-                    flags = { "trilinear-filtering" },
-                    frame_count = 30,
-                    height = 192,
-                    line_length = 6,
-                    priority = "high",
-                    scale = 0.5,
-                    shift = { 0, 0 },
-                    width = 192,
-                    x = 0,
-                    y = 0
-                }
-            }
+        pictures = {
+            north = { animation = vertical_animation },
+            south = { animation = vertical_animation },
+            east = { animation = horizontal_animation },
+            west = { animation = horizontal_animation }
         },
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/petro-generator.png",
         icon_size = 64,
@@ -203,60 +265,6 @@ data:extend({
                 {
                     filename = "__base__/sound/car-metal-impact-6.ogg",
                     volume = 0.5
-                }
-            }
-        },
-        vertical_animation = {
-            layers = {
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = true,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-shadow-ns.png",
-                    height = 256,
-                    priority = "high",
-                    repeat_count = 30,
-                    scale = 0.5,
-                    shift = { 0, 0 },
-                    width = 192,
-                    x = 0,
-                    y = 0
-                },
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = true,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-working-shadow-ns.png",
-                    frame_count = 30,
-                    height = 192,
-                    line_length = 6,
-                    priority = "high",
-                    scale = 0.5,
-                    shift = { 1.5, 0 },
-                    width = 128,
-                    x = 0,
-                    y = 0
-                },
-                {
-                    animation_speed = 1,
-                    draw_as_glow = false,
-                    draw_as_light = false,
-                    draw_as_shadow = false,
-                    filename =
-                    "__IndustrialRevolution3Assets3__/graphics/entities/machines/power/petro-generator-base-ns.png",
-                    frame_count = 30,
-                    height = 256,
-                    line_length = 6,
-                    priority = "high",
-                    scale = 0.5,
-                    shift = { 0, 0 },
-                    width = 192,
-                    x = 0,
-                    y = 0
                 }
             }
         },

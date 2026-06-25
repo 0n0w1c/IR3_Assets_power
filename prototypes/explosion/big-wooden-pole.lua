@@ -92,7 +92,6 @@ data:extend({
             "placeable-off-grid"
         },
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/big-wooden-pole.png",
-        icon_mipmaps = 4,
         icon_size = 64,
         render_layer = "object",
         smoke = "light-smoke",
